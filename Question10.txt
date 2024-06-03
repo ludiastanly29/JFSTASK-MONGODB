@@ -4,6 +4,9 @@ db.getCollection('product').find({
   product_price: 28
 });
 
+db.product.deleteMany( { product_price: 28 } )
+
+
 
 
 RESULT:
@@ -23,5 +26,11 @@ BEFORE DELETE
 
 
 AFTER DELETE
+
+
+{
+  acknowledged: true,
+  deletedCount: 1
+}
 
 []
