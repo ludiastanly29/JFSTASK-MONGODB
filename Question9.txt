@@ -1,0 +1,11 @@
+Find products which contain product color indigo  and product price 492.00
+
+db.getCollection('product').find({
+  product_color: 'indigo',
+  product_price: 492
+});
+
+
+RESULT:
+
+[]

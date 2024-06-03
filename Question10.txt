@@ -1,0 +1,27 @@
+Delete the products which product price value are 28
+
+db.getCollection('product').find({
+  product_price: 28
+});
+
+
+
+RESULT:
+
+BEFORE DELETE 
+
+{
+  "_id": {
+    "$oid": "664b799c0dc66ccde129754d"
+  },
+  "id": "9",
+  "product_name": "Awesome Wooden Ball",
+  "product_price": 28,
+  "product_material": "Soft",
+  "product_color": "azure"
+}
+
+
+AFTER DELETE
+
+[]

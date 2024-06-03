@@ -1,0 +1,61 @@
+Find the product price which are between 400 to 800
+
+
+db.getCollection('product').find({
+  product_price: { $gte: 400, $lte: 800 }
+});
+
+RESULT:
+
+[{
+  "_id": {
+    "$oid": "664b799c0dc66ccde1297545"
+  },
+  "id": "1",
+  "product_name": "Intelligent Fresh Chips",
+  "product_price": 655,
+  "product_material": "Concrete",
+  "product_color": "mint green"
+},
+{
+  "_id": {
+    "$oid": "664b799c0dc66ccde1297547"
+  },
+  "id": "3",
+  "product_name": "Refined Steel Car",
+  "product_price": 690,
+  "product_material": "Rubber",
+  "product_color": "gold"
+},
+{
+  "_id": {
+    "$oid": "664b799c0dc66ccde1297548"
+  },
+  "id": "4",
+  "product_name": "Gorgeous Plastic Pants",
+  "product_price": 492,
+  "product_material": "Soft",
+  "product_color": "plum"
+},
+{
+  "_id": {
+    "$oid": "664b799c0dc66ccde129754a"
+  },
+  "id": "6",
+  "product_name": "Awesome Wooden Towels",
+  "product_price": 474,
+  "product_material": "Plastic",
+  "product_color": "orange"
+},
+{
+  "_id": {
+    "$oid": "664b799c0dc66ccde129754b"
+  },
+  "id": "7",
+  "product_name": "Practical Soft Shoes",
+  "product_price": 500,
+  "product_material": "Rubber",
+  "product_color": "pink"
+}]
+
+
